@@ -1,3 +1,8 @@
+import Article from "../models/Article";
+/**
+ * @param {Article[]} articles
+ * @param {number} count
+ */
 const initialState = {
   count: 0,
   articles: [
@@ -10,6 +15,8 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "ADD":
       return { ...state, count: state.count + 1 };
+    case "Ajout d'aticle":
+      return { ...state, articles:articles.push(action.article)}
     default:
       state;
   }
