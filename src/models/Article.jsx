@@ -33,14 +33,11 @@ ArticleProperties.prototype.date = "";
  * Classe représentant un article.
  */
 class Article {
-  /**
-   * @param {ArticleProperties} props - Les propriétés de l'article.
-   */
-  constructor(props) {
-    this.titre = props.titre;
-    this.image = props.image;
-    this.description = props.description;
-    this.date = props.date;
+  constructor() {
+    this.titre = "";
+    this.image = "";
+    this.description = "";
+    this.date = "";
   }
 }
 
