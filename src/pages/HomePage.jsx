@@ -1,8 +1,12 @@
 import { useContext } from "react";
 import { context } from "./../reduces/provider";
 import Button from "./../components/Button";
+import State from "../models/State";
 
 const HomePage = () => {
+  /**
+   * @type {[State, any]}
+   */
   const [state, dispatch] = useContext(context);
   return (
     <>
