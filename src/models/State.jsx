@@ -19,13 +19,6 @@ StateProperties.prototype.articles = [];
 StateProperties.prototype.count = 0;
 
 /**
- * La liste des articles.
- * @type {Article}
- */
-StateProperties.prototype.newArticle = {};
-
-
-/**
  * Classe représentant un state.
  */
 class State {
@@ -35,7 +28,6 @@ class State {
   constructor(props) {
     this.articles = props.articles;
     this.count = props.count;
-    this.newArticle = props.newArticle;
   }
 }
 export default State;
